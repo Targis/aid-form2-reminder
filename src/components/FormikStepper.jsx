@@ -39,7 +39,7 @@ function FormikStepper({ children, ...props }) {
             Swal.fire('Ой...', 'Такі дані є в базі, але номер телефону та податковий номер не співпадають!', 'warning')
           }
           if (data.result === 'notfound') {
-            Swal.fire('Ой...', 'Номер телефону або податковий номер не знайдено!', 'error')
+            Swal.fire('Не знайдено', 'Номер телефону або податковий номер не знайдено!', 'error')
           }
           if (data.result === 'success') {
             Swal.fire({
